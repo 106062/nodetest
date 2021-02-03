@@ -1,12 +1,12 @@
 package doadd
 
-import (
-	"fmt"
-)
+import "errors"
 
-func Doadd(a int, b int){
+func Doadd(a ,b int) (int, error) {
+	if b == 0 {
+		return 0, errors.New("Not to be 0");
+	}
 	c := a + b;
-	fmt.Println(c);
-	return c;
+	return c, nil;
 }
 
