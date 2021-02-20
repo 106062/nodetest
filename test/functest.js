@@ -10,7 +10,7 @@ describe("function test add", function () {
 		assert.equal(func.doadd("a", "b"), 0);
 	})
 	// error example
-	it("will return error", function () {
-		assert.equal(func.doadd(1, 2), 0);
-	})
+// 	it("will return error", function () {
+// 		assert.equal(func.doadd(1, 2), 0);
+// 	})
 });
